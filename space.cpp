@@ -1,13 +1,20 @@
 #include <iostream>
 
 int main() {
+  //introduce the program
   std::cout << " you are an interplanetary space fighter who\n wants to compete to win championship belts for various weight\n categories on other planets in the milkyway.\n as your interplanetary space coach, i will compute\n your weight for your destination planet.\n";
+  
+  //prompt the user to enter their weight
   std::cout << " how many pounds do you weigh on earth?\n";
   double weight;
   std::cin >> weight;
+
+  //ask the user which planet they want to go to
   std::cout << " which planet would you like to compete on?\n press 1 for mercury, 2 for venus, 3 for mars, 4 for jupiter,\n 5 for saturn, 6 for uranus, and 7 for neptune.\n";
   int planet;
   std::cin >> planet;
+
+  //calculate their weight based on which planet they choose. percentage of earths surface gravity on the planet times your weight on earth equals your weight on that planet.
   switch (planet) {
     case 1 :
       std::cout << "you weigh " << (0.38 * weight) << " pounds on mercury\n";
